@@ -1,0 +1,106 @@
+/* =========================
+   CUSTOMER DASHBOARD
+========================= */
+
+.dashboard-page {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  direction: rtl;
+
+  background:
+    linear-gradient(135deg, #f8f6f2, #ebe7e1);
+}
+
+.dashboard-card {
+  width: 520px;
+
+  padding: 34px;
+
+  border-radius: 26px;
+
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(16px);
+
+  box-shadow:
+    0 30px 70px rgba(0,0,0,0.12);
+
+  border: 1px solid rgba(255,255,255,0.5);
+
+  animation: popIn 0.6s ease;
+}
+
+.dashboard-card h1 {
+  font-size: 30px;
+  font-weight: 300;
+
+  color: #2d2d2d;
+
+  margin-bottom: 18px;
+}
+
+.info, .stats {
+  background: rgba(143,167,154,0.08);
+
+  border-radius: 14px;
+
+  padding: 14px;
+
+  margin-top: 14px;
+}
+
+.info p, .stats p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.stats p b {
+  color: #7d9889;
+}
+
+.dashboard-card button {
+  margin-top: 22px;
+
+  width: 100%;
+  height: 50px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: linear-gradient(135deg, #c7a46a, #d8bc8c);
+  color: #fff;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  box-shadow: 0 15px 30px rgba(199,164,106,0.25);
+
+  transition: 0.3s;
+}
+
+.dashboard-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 45px rgba(199,164,106,0.35);
+}
+
+.dashboard-empty {
+  font-size: 18px;
+  color: #666;
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

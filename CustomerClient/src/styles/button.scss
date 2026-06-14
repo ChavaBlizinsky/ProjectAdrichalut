@@ -1,0 +1,38 @@
+// src/styles/button.scss
+// src/styles/button.scss
+@import './_mixins';
+
+.btn--primary {
+  @include button-style(#14b8a6, white);
+}
+
+.btn--edit {
+  @include button-style(#3b82f6, white);
+}
+
+.btn--delete {
+  @include button-style(#ef4444, white);
+}
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: #14b8a6;
+  color: white;
+}
+
+.btn--primary:hover {
+  background-color: darken(#14b8a6, 10%);
+}
+
+.btn--edit {
+  background-color: #3b82f6;
+}
+
+.btn--delete {
+  background-color: #ef4444;
+}

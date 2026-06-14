@@ -1,0 +1,67 @@
+// src/styles/main.scss
+@import './variables';
+
+.page {
+  padding: 20px;
+  background: $background-color;
+  min-height: 100vh;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.table {
+  width: 100%;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.table th {
+  background: #f1f5f9;
+  padding: 12px;
+  text-align: left;
+}
+
+.table td {
+  padding: 12px;
+  border-top: 1px solid #eee;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: $border-radius;
+  font-size: $font-size-base;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn--primary {
+  background-color: $primary-color;
+  color: white;
+}
+
+.btn--primary:hover {
+  background-color: darken($primary-color, 10%);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__card {
+  background: white;
+  padding: 20px;
+  width: 420px;
+  border-radius: 14px;
+}

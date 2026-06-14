@@ -1,0 +1,187 @@
+/* =========================
+   GLOBAL LUXURY STYLE
+========================= */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+
+  background:
+    linear-gradient(135deg, #f8f6f2, #ebe7e1);
+
+  color: #2d2d2d;
+
+  margin: 0;
+  padding: 0;
+
+  direction: rtl;
+}
+
+h1, h2, h3 {
+  color: #2d2d2d;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+
+  background:
+    radial-gradient(circle at top right, rgba(143,167,154,0.2), transparent 60%),
+    radial-gradient(circle at bottom left, rgba(199,164,106,0.15), transparent 60%),
+    linear-gradient(135deg, #f8f6f2, #ebe7e1);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 46px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 26px;
+
+  background: linear-gradient(135deg, #7d9889, #98deb8);
+  border: none;
+
+  color: white;
+  font-size: 15px;
+
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  box-shadow: 0 15px 30px rgba(125,152,137,0.25);
+
+  transition: 0.3s ease;
+}
+
+.hero button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 45px rgba(125,152,137,0.35);
+}
+
+/* =========================
+   ABOUT US
+========================= */
+
+.about-us {
+  padding: 70px 20px;
+  text-align: center;
+
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(12px);
+
+  border-radius: 0;
+}
+
+.about-us p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.9;
+  color: #6a6d69;
+}
+
+/* =========================
+   BLOG CARD (GLASS LUX)
+========================= */
+
+.blog-card {
+  border: none;
+
+  padding: 22px;
+  margin: 14px;
+
+  border-radius: 18px;
+
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(14px);
+
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+
+  transition: 0.4s ease;
+
+  text-align: center;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.blog-card img {
+  width: 100%;
+  border-radius: 14px;
+  margin-bottom: 12px;
+}
+
+.read-more {
+  color: #c7a46a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  color: #7d9889;
+}
+
+/* =========================
+   NAVBAR (LUX CLEAN)
+========================= */
+
+nav {
+  background: rgba(52, 73, 94, 0.15);
+  backdrop-filter: blur(10px);
+
+  padding: 14px 0;
+
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+nav ul li a {
+  color: #2d2d2d;
+  text-decoration: none;
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #7d9889;
+}
+
+/* =========================
+   FOOTER (ELEGANT)
+========================= */
+
+footer {
+  background:
+    linear-gradient(135deg, #2d2d2d, #3a3a3a);
+
+  padding: 30px;
+
+  text-align: center;
+
+  color: #f8f6f2;
+
+  margin-top: 60px;
+}

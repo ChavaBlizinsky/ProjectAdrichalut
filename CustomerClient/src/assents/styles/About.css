@@ -1,0 +1,195 @@
+/* =========================
+   ABOUT HERO (LUX VERSION)
+========================= */
+
+.about-hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  background:
+    linear-gradient(135deg, rgba(248,246,242,0.85), rgba(235,231,225,0.9)),
+    url("../images/image.png") center/cover no-repeat;
+
+  overflow: hidden;
+}
+
+/* glow effect כמו שאר האתר */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(143,167,154,0.15), transparent 70%);
+  top: -150px;
+  left: -150px;
+}
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(199,164,106,0.12), transparent 70%);
+  bottom: -150px;
+  right: -150px;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(0,0,0,0.25), rgba(0,0,0,0.05));
+}
+
+.hero-content {
+  position: relative;
+  text-align: center;
+  max-width: 720px;
+  padding: 20px;
+
+  color: #2d2d2d;
+
+  animation: fadeUp 0.8s ease;
+}
+
+.hero-content h1 {
+  font-size: 54px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #6a6d69;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.about-container {
+  padding: 90px 10%;
+  background: linear-gradient(135deg, #f8f6f2, #ebe7e1);
+  color: #2d2d2d;
+}
+
+/* =========================
+   TEXT BLOCK
+========================= */
+
+.text-block h2 {
+  font-size: 34px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: #2d2d2d;
+}
+
+.text-block p {
+  opacity: 0.85;
+  line-height: 1.9;
+  max-width: 800px;
+}
+
+/* =========================
+   GRID CARDS (GLASS STYLE)
+========================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+  margin-top: 60px;
+}
+
+.card {
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(14px);
+
+  padding: 26px;
+  border-radius: 18px;
+
+  border: 1px solid rgba(255,255,255,0.4);
+
+  box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #7d9889;
+  font-weight: 500;
+}
+
+/* =========================
+   STATS (LUX NUMBERS)
+========================= */
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 44px;
+  color: #c7a46a;
+  font-weight: 400;
+}
+
+.stat p {
+  color: #6a6d69;
+}
+
+/* =========================
+   QUOTE (ELEGANT)
+========================= */
+
+.quote {
+  margin-top: 90px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  color: #2d2d2d;
+  opacity: 0.85;
+  position: relative;
+}
+
+.quote::before {
+  content: "“";
+  font-size: 60px;
+  color: #c7a46a;
+  position: absolute;
+  top: -30px;
+  right: 50%;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

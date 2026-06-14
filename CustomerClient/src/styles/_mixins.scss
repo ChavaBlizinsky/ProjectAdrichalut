@@ -1,0 +1,38 @@
+// src/styles/_mixins.scss
+
+// מיקסין של גבולות מעוגלים
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// מיקסין עבור לחצנים
+@mixin button-style($background, $color) {
+  background-color: $background;
+  color: $color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  &:hover {
+    background-color: darken($background, 10%);
+  }
+}
+
+// מיקסין עבור טבלאות
+@mixin table-style($border-color, $header-bg-color, $row-padding) {
+  border-collapse: collapse;
+  width: 100%;
+  th {
+    background-color: $header-bg-color;
+    padding: 12px;
+    text-align: left;
+  }
+  td {
+    padding: $row-padding;
+    border-top: 1px solid $border-color;
+  }
+}

@@ -1,0 +1,105 @@
+/* =========================
+   LOGIN - ARCHITECT STYLE
+========================= */
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: rtl;
+
+  background:
+    radial-gradient(circle at top right, rgba(143,167,154,0.25), transparent 55%),
+    radial-gradient(circle at bottom left, rgba(199,164,106,0.18), transparent 60%),
+    linear-gradient(135deg, #f8f6f2, #ebe7e1);
+}
+
+.login-card {
+  width: 420px;
+  padding: 32px;
+
+  border-radius: 22px;
+
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.12);
+
+  border: 1px solid rgba(255,255,255,0.4);
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  animation: fadeIn 0.7s ease;
+}
+
+.login-card h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  color: #2d2d2d;
+  margin-bottom: 10px;
+}
+
+.login-card input {
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.08);
+
+  padding: 0 14px;
+
+  font-size: 14px;
+
+  background: rgba(255,255,255,0.8);
+  transition: 0.3s;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #8fa79a;
+  box-shadow: 0 0 0 3px rgba(143,167,154,0.2);
+}
+
+.login-card button {
+  height: 50px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: linear-gradient(135deg, #7d9889, #98deb8);
+  color: white;
+
+  font-size: 15px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  box-shadow: 0 15px 30px rgba(125,152,137,0.25);
+
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px rgba(125,152,137,0.35);
+}
+
+.error {
+  text-align: center;
+  color: #b44;
+  font-size: 13px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

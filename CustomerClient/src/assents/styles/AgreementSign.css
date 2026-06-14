@@ -1,0 +1,121 @@
+/* =========================
+   AGREEMENT PAGE
+========================= */
+
+.agreement-page{
+  min-height: 100vh;
+
+  padding: 120px 6% 80px;
+
+  background:
+    radial-gradient(circle at top right, rgba(143,167,154,0.12), transparent 55%),
+    radial-gradient(circle at bottom left, rgba(199,164,106,0.10), transparent 60%),
+    linear-gradient(135deg, #f8f6f2, #f2efea);
+
+  direction: rtl;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.agreement-title{
+  font-size: 40px;
+  font-weight: 300;
+
+  color: #2d2d2d;
+
+  margin-bottom: 24px;
+
+  letter-spacing: 0.5px;
+}
+
+/* =========================
+   PDF PREVIEW
+========================= */
+
+.agreement-pdf{
+  width: 100%;
+  max-width: 900px;
+  height: 520px;
+
+  border-radius: 22px;
+
+  border: 1px solid rgba(230,226,219,0.8);
+
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.10);
+
+  margin-bottom: 30px;
+}
+
+/* =========================
+   FORM AREA
+========================= */
+
+.agreement-form{
+  width: 100%;
+  max-width: 900px;
+
+  display:flex;
+  justify-content: center;
+
+  padding: 20px 0;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.agreement-button{
+  height: 54px;
+
+  padding: 0 34px;
+
+  border: none;
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  color: #fff;
+
+  background: linear-gradient(135deg, #7d9889, #98deb8);
+
+  box-shadow: 0 18px 40px rgba(125,152,137,0.28);
+
+  transition: 0.35s ease;
+}
+
+.agreement-button:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 26px 55px rgba(125,152,137,0.38);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px){
+
+  .agreement-title{
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .agreement-pdf{
+    height: 420px;
+  }
+
+  .agreement-button{
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+// src/styles/table.scss
+// src/styles/table.scss
+@import './_mixins';
+
+.table {
+  @include table-style(#eee, #f1f5f9, 12px);
+}
+.table {
+  width: 100%;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.table th {
+  background: #f1f5f9;
+  padding: 12px;
+  text-align: left;
+}
+
+.table td {
+  padding: 12px;
+  border-top: 1px solid #eee;
+}
